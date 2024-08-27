@@ -1,2 +1,94 @@
-main {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f0f0;  /* Neutral ljusgrå bakgrund */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2c5e2e;  /* Mörkgrön färg för rubriken */
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #4a7a4c;  /* Mellangrön färg för underrubriker */
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4CAF50;  /* Grön färg för knappar */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  width: calc(50% - 16px);  /* Gör knapparna sida vid sida */
+}
+
+button:hover {
+  background-color: #45a049;  /* Mörkare grön vid hover */
+  transform: translateY(-2px);
+}
+
+button.active {
+  background-color: #FF8C00;  /* Orange färg för aktiv knapp */
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #f8f8f8;
+}
+
+.word-item {
+  background-color: #e8f5e9;  /* Ljusgrön bakgrund för ordrutor */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sentence-item {
+  background-color: #fff3e0;  /* Ljusorange bakgrund för meningsrutor */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Responsiv design */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    width: 100%;  /* Fullbredd knappar på mindre skärmar */
+    margin: 8px 0;
+  }
 }

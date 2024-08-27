@@ -28,7 +28,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="container">
       <h1>Lär dig serbiska</h1>
 
       <div>
@@ -43,10 +43,16 @@ function App() {
       {selectedWordSet && (
         <div>
           <h2>Välj grammatikområde att öva på:</h2>
-          <button onClick={() => setSelectedGrammarArea('ackusativ')}>
+          <button 
+            onClick={() => setSelectedGrammarArea('ackusativ')}
+            className={selectedGrammarArea === 'ackusativ' ? 'active' : ''}
+          >
             Ackusativ ("Se vad verben gör!")
           </button>
-          <button onClick={() => setSelectedGrammarArea('lokativ')}>
+          <button 
+            onClick={() => setSelectedGrammarArea('lokativ')}
+            className={selectedGrammarArea === 'lokativ' ? 'active' : ''}
+          >
             Lokativ ("Var saker händer!")
           </button>
         </div>
