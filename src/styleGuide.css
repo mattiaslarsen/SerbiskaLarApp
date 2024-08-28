@@ -1,0 +1,74 @@
+:root {
+  /* Primära färger */
+  --dark-bg: #1E1E24;
+  --accent: #92140C;
+  --light-bg: #FFF8F0;
+  --secondary-accent: #FFCF99;
+  --deep-accent: #111D4A;
+
+  /* Kompletterande ljusa färger */
+  --light-gray: #898383;
+  --light-red: #C57E76;
+  --light-blue: #85889B;
+
+  /* Ytterligare ljusa färger */
+  --softer-light: #D1CBC4;
+  --softer-red: #E6C3BB;
+  --softer-gray: #CFCCCE;
+
+  /* Typografifärger */
+  --light-text: #FFF8F0;
+  --dark-text: #1E1E24;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  color: var(--dark-text);
+  background-color: var(--light-bg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+
+p { font-size: 16px; }
+.small-text { font-size: 14px; }
+
+/* Grundläggande knappstilar */
+.button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-primary {
+  background-color: var(--accent);
+  color: var(--light-text);
+}
+
+.button-primary:hover {
+  background-color: var(--secondary-accent);
+  color: var(--dark-text);
+}
+
+.button-secondary {
+  background-color: var(--deep-accent);
+  color: var(--light-text);
+  border: 1px solid var(--light-text);
+}
+
+/* Responsiva breakpoints */
+@media (max-width: 768px) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 28px; }
+  h3 { font-size: 24px; }
+  h4 { font-size: 20px; }
+}
